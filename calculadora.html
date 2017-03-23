@@ -4,41 +4,45 @@
     <meta charset="utf-8">
     <title>Calculadora Monseciana</title>
   </head>
-  <body>
-    <h1>CALCULADORA</h1>
+  <body  ALIGN=center>
+    <h1 style="font-family:helvetica" >CALCULADORA  </h1>
 
 
-    <td><input type="text"  id=caja    size="24"  ></td>
+    <td><input type="text"  id=caja    size="24" onkeypress="return teclado(event)" ></td>
 
 
 
-    <table  width="200" border="5" bordercolor="pink">
+    <table  width="200" border="5" bordercolor="pink"  ALIGN=center >
     <tr>
-      <td><strong><input type="button" value="1" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="2" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="3" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="+" onclick="agregarNumero(this)" ></strong></td>
+      <td><strong><input type="button" value="1" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="2" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="3" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="+" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
     </tr>
 
     <tr>
-      <td><strong><input type="button" value="4" onclick="agregarNumero()" ></strong></td>
-      <td><strong><input type="button" value="5" onclick="agregarNumero()" ></strong></td>
-      <td><strong><input type="button" value="6" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="-" onclick="agregarNumero(this)" ></strong></td>
+      <td><strong><input type="button" value="4" onclick="agregarNumero()" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="5" onclick="agregarNumero()" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="6" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="-" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
     </tr>
 
     <tr>
-      <td><strong><input type="button" value="7" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="8" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="9" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="*" onclick="agregarNumero(this)" ></strong></td>
+      <td><strong><input type="button" value="7" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="8" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="9" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="*" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#12f9d5; border-radius:8px" ></strong></td>
     </tr>
 
     <tr>
-      <td><strong><input type="button" value="." onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="0" onclick="agregarNumero(this)" ></strong></td>
-      <td><strong><input type="button" value="=" onclick="calculadora()" ></strong></td>
-      <td><strong><input type="button" value="/" onclick="agregarNumero(this)" ></strong></td>
+      <td><strong><input type="button" value="." onclick="agregarNumero(this)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="0" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="=" onclick="calculadora()" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+      <td><strong><input type="button" value="/" onclick="agregarNumero(this)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
+    </tr>
+
+    <tr>
+      <td><strong><input type="button" value="C" onclick="borrar(numeros)" style="width:40px; height:40px; background:#51ead2; border-radius:8px" ></strong></td>
     </tr>
 
     </table>
