@@ -6,15 +6,15 @@ function agregarNumero(elemento){
 
 function calculadora(valor){
   var operacion = document.getElementById("caja");
-  caja.value = eval(operacion.value);
+  operacion.value = eval(operacion.value);
 }
 
  function teclado(event){
   var tecladito = event.keycode;
    if (tecladito == 13){
      calculadora();
-     return false;
-   } else if (tecladito < 42 || tecladito > 57){
+//return false;
+   }else if (tecladito < 42 || tecladito > 57){
      return false;
    }
  }
